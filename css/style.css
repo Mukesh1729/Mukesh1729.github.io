@@ -107,6 +107,14 @@ ul.address li ul.address-text li a:hover{
 }
 /*--//banner-top--*/
 /*--top-nav--*/
+.navbar.affix{
+    top: 0;
+    width: 100%;
+}
+.navbar{
+    border-radius: 0 !important;
+    z-index: 999;
+}
 .top-nav {
     background: #008B8B;
 }
@@ -549,11 +557,12 @@ h2.resp-accordion {
     display: inline-block;
 }
 .contact-form input[type="text"].email {
-    margin: 3em 0 1em 0.5em;
+    float: right;
 }
 .contact-form input[type="text"].phone {
     width: 100%;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 .contact-form textarea {
     width: 100%;
@@ -1099,3 +1108,59 @@ h3.title {
 
 }
 /*--//responsive-design---*/
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+ul.social-buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul.social-buttons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+ul.social-buttons li a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 60px;
+  color: white;
+}
+
+ul.social-buttons li a.fa-twitter {
+  background-color: #4099FF;
+}
+
+ul.social-buttons li a.fa-facebook {
+  background-color: #3B5998;
+}
+
+ul.social-buttons li a.fa-instagram {
+  background-color: #3f729b;
+}
+
+ul.social-buttons li a.fa-linkedin {
+  background-color: #0e76a8;
+}
+ul.social-buttons li a.fa-google-plus {
+  background-color: #d34836;
+}
+ul.social-buttons li a.fa-github {
+  background-color: #333;
+}
+
+/*Demo 1*/
+ul#demo1 li a {
+  transition: transform 0.2s linear;
+}
+
+ul#demo1 li:hover a {
+  transform: translateY(-10px);
+}
